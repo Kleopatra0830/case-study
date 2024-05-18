@@ -1,17 +1,19 @@
-import React, { useState } from "react";
-import "./App.css";
-import ChatWindow from "./components/ChatWindow";
+import React from 'react'; // Simplified import without unused useState
+import "./App.css"; // Keep the CSS import for styling
+import ChatComponent from './ChatComponent'; // Import the ChatComponent
+import ChatWindow from "./components/ChatWindow"; // Import the ChatWindow component
 
-function App() {
-
+const App = () => {
   return (
     <div className="App">
+      <h1>React ChatGPT Integration</h1>
       <div className="heading">
         Instalily Case Study
       </div>
-        <ChatWindow/>
+      <ChatComponent /> // ChatComponent is used here
+      <ChatWindow /> // ChatWindow is also included
     </div>
   );
-}
+};
 
 export default App;
